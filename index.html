@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags-->
+<!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <meta name="description" content="Kenzie Form Practice">
     <meta name="author" content="Kenzie and Colorlib Templates">
     <meta name="keywords" content="Kenzie Form Practice">
-
-    <!-- Title Page-->
+<!-- Title Page-->
     <title>Kenzie Form Practice</title>
-
-    <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-    <!-- CSS-->
+<!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+<!-- CSS-->
     <link href="css/base.css" rel="stylesheet" media="all">
     <link href="css/main.css" rel="stylesheet" media="all">
 </head>
-
 <body>
-
-    <!-- Your html here -->
-    <form>
-        <div class="bg-heading-03.jpg">
-            <form action="/action_page.php" class="container">
-                <div>
-                    <header>module 300px</header>
-                  </div>
-                  
-                  <div class="module">
-                      <header>module 300px w/ content-box</header>
-                  </div>
-                  <div class="component"> <!-- I'm content-box -->
-                    <header> <!-- I'm border-box still -->
-                    </header>
-                  </div>
-                <h1>Registration Info</form>/h1>
-                 <label for="name"><b>name</b></label>
-                        <input type="name" placeholder="Enter name" name="name" required>
-                <label for="date"><b>date<b></label>
-                     <input type="date" id="birthday" name="birthday">
-                <label for=""><b>Experience</b></label>
-                     <input type="password" placeholder="Enter Password" name="psw" required>
-                     <div class="selectWrapper">
-                        <select> options... </select>
-                    </div>
-                <button type="submit" class="btn">Login</button>
-                <label for="text">Text Input</label>
-                    <input type="text" id="text" required>
-        </div>
+<!-- Your html here -->
+        <div class="form-wrapper">
+            <div class="form>
+<!--The cool image-->
+    <img src="images/bg-heading-03.jpg" alt="heading image" />
+<!--The actual Form-->
+    <form action="/action_page.php" class="container">
+    <h1>Registration Info</form>/h1>
+<!--Name-->
+        <label for="name"></label>
+        <input 
+        id="name"
+        placeholder="Enter Name" 
+        name="name" 
+        type="text" 
+        required
+        />
+<!--Date-->
+    <label for="date">"date"</label>
+    <input 
+    id="date" 
+    placeholder="MM/DD/YYYY"
+    name="date"
+    type="text" />
+<!--Experience-->
+    <label for="Experience"></label>
+    <select class="select-field" name="Experience" id="Experience">
+        <option id="Experience" value="1">Experience</option>
+    </select>
+<!--Email-->
+<label for="email"></label>
+<input
+    id="email"
+    aria-placeholder="="Email"
+    name="email"
+    type="email" />
+<!-- Phone -->
+<label for="phone"></label>
+<input
+    id="phone"
+    placeholder="Phone (Optional)"
+    name="phone"
+    type="text"  />
+<!-- Submit -->
+<button class="submit-btn" type="submit">Submit</button>
+<div class="selectWrapper"></div>
     </form>
+    </div>
+</div>
 </body>
-
 </html>

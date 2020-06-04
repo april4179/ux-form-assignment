@@ -1,9 +1,29 @@
 
 /*  Put your CSS Here */
-{
-webkit-box-shadow>http:www.developer.mozilla.org/en-US/docs/Web/CSS/Specificity 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-moz-box-shadow http:developer.mozilla.org/en-US/docs/Web/CSS/Specificity0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-box-shadow https:developer.mozilla.org/en-US/docs/Web/CSS/Specificity 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+select {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  <div class="selectWrapper">
+    <select> options... </select>
+</div>
+
+.selectWrapper {
+    position: relative;
+} 
+.selectWrapper:after {
+    content: '>';
+    font: 17px "Consolas", monospace;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    pointer-events: none;
+
+    right: some spacing...
+    bottom: some spacing...
+    color: your font color...
 }
 /* ==========================================================================
    #FONT
